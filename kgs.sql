@@ -1,0 +1,9 @@
+CREATE DATABASE kgs;
+USE kgs;
+
+CREATE TABLE key_generation (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    generated_key VARCHAR(255)
+);
+
+ALTER TABLE key_generation AUTO_INCREMENT = 100000000001;
